@@ -88,3 +88,67 @@ footer {
     text-align: center;
     padding: 20px;
 }
+/* Apartado Compras */
+.compras {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50vh; /* Ajusta según el diseño */
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.compras-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.compras-container h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #004aad;
+}
+
+.compras-container p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.compras-buttons {
+    display: flex;
+    gap: 20px; /* Espacio entre botones */
+}
+
+.compras-buttons .btn-comprar,
+.compras-buttons .btn-detalles {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.compras-buttons .btn-comprar {
+    background-color: #28a745; /* Verde profesional */
+}
+
+.compras-buttons .btn-comprar:hover {
+    background-color: #1c7e33;
+    transform: scale(1.1);
+}
+
+.compras-buttons .btn-detalles {
+    background-color: #007BFF; /* Azul llamativo */
+}
+
+.compras-buttons .btn-detalles:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
