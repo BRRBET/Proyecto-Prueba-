@@ -1,47 +1,90 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #004aad; /* Color azul llamativo */
+    color: white;
+}
+
 .logo-container {
     display: flex;
     align-items: center;
 }
 
 .logo-image {
-    width: 10px;
-    height: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     margin-right: 10px;
-    border-radius:15px;
 }
 
-.hero-buttons {
-    margin-top: 50px;
-    display: flex;
-    gap: 20px;
+/* Hero Section */
+.hero {
+    text-align: center;
+    background-color: #ffcc00; /* Fondo amarillo brillante */
+    padding: 50px 20px;
 }
 
-.btn {
-    padding: 10px 20px;
+.hero-buttons .btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
     border: none;
+    border-radius: 5px;
+    cursor: pointer;
     text-decoration: none;
     color: white;
-    font-size: 16px;
-    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
 }
 
-.btn-primary {
-    background-color: #007BFF;
+.hero-buttons .btn-primary {
+    background-color: #ff5733; /* Naranja llamativo */
 }
 
-.btn-secondary {
-    background-color: #28A745;
+.hero-buttons .btn-primary:hover {
+    background-color: #c13e18;
+    transform: scale(1.1);
 }
 
+.hero-buttons .btn-secondary {
+    background-color: #28a745; /* Verde profesional */
+}
+
+.hero-buttons .btn-secondary:hover {
+    background-color: #1c7e33;
+    transform: scale(1.1);
+}
+
+/* WhatsApp Button */
 .whatsapp-btn {
-    position: center;
-    bottom: 20px;
+    position: absolute;
+    top: 90px;
     left: 20px;
     display: flex;
-    align-items: start;
+    align-items: center;
 }
 
 .whatsapp-logo {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* Footer */
+footer {
+    background-color: #004aad;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
