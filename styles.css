@@ -33,11 +33,11 @@
 }
 
 .whatsapp-btn {
-    position: fixed;
+    position: center;
     bottom: 20px;
     left: 20px;
     display: flex;
-    align-items: center;
+    align-items: start;
 }
 
 .whatsapp-logo {
